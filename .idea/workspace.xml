@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe350e4c-6c59-480e-a745-8867d2f76c63" name="Changes" comment="Rename .gitlab-ci.yaml to .gitlab-ci.yml&#10;&#10;This commit renames the .gitlab-ci.yaml file to .gitlab-ci.yml as per the standards and convention. It helps in maintaining consistency across different projects and platforms.">
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="es91h1ls" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2fTutIw0GOuu2psu3wmagImS6Nv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "dev",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "settings.editor.selected.configurable": "consents"
+  }
+}]]></component>
+  <component name="RunManager" selected="Cargo.Run paycheck_estimator">
+    <configuration name="Run paycheck_estimator" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run --package paycheck_estimator --bin paycheck_estimator" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test paycheck_estimator" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="test --workspace" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1703043654039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703043654039</updated>
+      <workItem from="1703043655152" duration="104000" />
+    </task>
+    <task id="LOCAL-00001" summary="Rename .gitlab-ci.yaml to .gitlab-ci.yml&#10;&#10;This commit renames the .gitlab-ci.yaml file to .gitlab-ci.yml as per the standards and convention. It helps in maintaining consistency across different projects and platforms.">
+      <option name="closed" value="true" />
+      <created>1713839022006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713839022006</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rename project from &quot;tax_calculator&quot; to &quot;paycheck_estimator&quot;&#10;&#10;The commit includes the deletion of several files directly related to the previous project name &quot;tax_calculator&quot;. These included .gitignore, Cargo.lock, various .xml files, and more. These files were replaced with new ones suitable for the new project name &quot;paycheck_estimator&quot;, which was also updated in the Cargo.toml file." />
+    <MESSAGE value="Create new project files for &quot;paycheck_estimator&quot;&#10;&#10;This commit adds new project files specific to the newly named project &quot;paycheck_estimator&quot;. This includes .iml and .xml configuration files, directory mappings, and modified workspace.xml. Note, all these changes reflect the renaming from &quot;tax_calculator&quot; to &quot;paycheck_estimator&quot;." />
+    <MESSAGE value="Rename .gitlab-ci.yaml to .gitlab-ci.yml&#10;&#10;This commit renames the .gitlab-ci.yaml file to .gitlab-ci.yml as per the standards and convention. It helps in maintaining consistency across different projects and platforms." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename .gitlab-ci.yaml to .gitlab-ci.yml&#10;&#10;This commit renames the .gitlab-ci.yaml file to .gitlab-ci.yml as per the standards and convention. It helps in maintaining consistency across different projects and platforms." />
+  </component>
+</project>

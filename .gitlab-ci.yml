@@ -1,0 +1,20 @@
+stages:
+  - build_and_test
+
+variables:
+  CARGO_TERM_COLOR: "always"
+  RUSTFLAGS: "-Dwarnings"
+
+build_and_test:
+  stage: build_and_test
+  image: rust:alpine
+  script:
+    - rustup component add clippy
+    - cargo build --verbose
+    - cargo clippy --all-targets --all-features
+    - cargo test --verbose
+  only:
+    - pushes
+    - merge_requests
+  tags:
+    - docker

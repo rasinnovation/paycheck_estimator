@@ -1,0 +1,33 @@
+# Reference: https://doc.rust-lang.org/cargo/guide/continuous-integration.html
+# Reference: https://doc.rust-lang.org/nightly/clippy/continuous_integration/github_actions.html
+
+name: Cargo Build & Test
+
+on:
+  push:
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+  RUSTFLAGS: "-Dwarnings"
+
+jobs:
+  build_and_test:
+    name: Rust project - latest
+    runs-on: alpine
+    strategy:
+      matrix:
+        toolchain:
+          - stable
+          - beta
+          - nightly
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update ToolChain
+        run: rustup update ${{ matrix.toolchain }} && rustup default ${{ matrix.toolchain }}
+      - name: Build Project
+        run: cargo build --verbose
+      - name: Run Clippy Checks
+        run: cargo clippy --all-targets --all-features
+      - name: Run Unit Tests
+        run: cargo test --verbose
