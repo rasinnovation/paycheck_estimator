@@ -1,0 +1,24 @@
+stages:
+  - build_and_test
+
+variables:
+  CARGO_TERM_COLOR: "always"
+  RUSTFLAGS: "-Dwarnings"
+
+build_and_test:
+  stage: build_and_test
+  image: alpine
+  before_script:
+    - apk add --no-cache curl git
+    - curl https://sh.rustup.rs -sSf | sh -s -- -y
+    - source $HOME/.cargo/env
+  script:
+    - rustup update $CI_COMMIT_REF_NAME && rustup default $CI_COMMIT_REF_NAME
+    - cargo build --verbose
+    - cargo clippy --all-targets --all-features
+    - cargo test --verbose
+  only:
+    - pushes
+    - merge_requests
+  tags:
+    - docker
